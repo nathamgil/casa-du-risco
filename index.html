@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa du Risco · Tatuagem no Imbuí, Salvador</title>
+<meta name="description" content="Casa du Risco, estúdio de tatuagem no Imbuí Torres Center, Salvador. Nog (realismo, preto e cinza, blackwork, geek) e Lilith (fine line e delicadas). Flashes disponíveis e pedido de orçamento pelo site.">
+<meta name="theme-color" content="#121212">
+<link rel="icon" href="fotos/logo-mini.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Casa du Risco · Sua tatuagem nova mora aqui">
+<meta property="og:description" content="Escolha quem tatua, veja os flashes disponíveis e peça seu orçamento.">
+<meta property="og:image" content="fotos/logo.jpg">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Caveat:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css?v=20261020132316">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"TattooParlor",
+  "name":"Casa du Risco",
+  "slogan":"Sua tatuagem nova mora aqui",
+  "image":"fotos/logo.jpg",
+  "address":{"@type":"PostalAddress","streetAddress":"R. Prof. Pinto de Aguiar, 2475, Imbuí Torres Center","addressLocality":"Salvador","addressRegion":"BA","addressCountry":"BR"},
+  "openingHours":"Mo-Sa 10:00-18:00",
+  "sameAs":["https://www.instagram.com/studiocasadurisco/"]
+}
+</script>
+</head>
+<body>
+
+<div id="faixa-demo" class="faixa-demo" hidden>
+  <b>Versão de demonstração.</b> O pedido funciona de verdade aqui, mas fica guardado só neste aparelho até ligarmos o banco de dados.
+</div>
+
+<header class="topo">
+  <div class="wrap topo-in">
+    <a class="marca" href="index.html" aria-label="Casa du Risco, início">
+      <img src="fotos/logo-mini.jpg" alt="" width="44" height="44">
+      <span><b>Casa <i>du</i> Risco</b><small>Studio de tatuagem · Imbuí</small></span>
+    </a>
+    <nav class="menu" aria-label="Cômodos da casa">
+      <a href="#moradores">Moradores</a>
+      <a href="#flashes-sec">Flashes</a>
+      <a href="#paredes">Galeria</a>
+      <a href="processo.html">Da ideia à pele</a>
+      <a href="#endereco">Endereço</a>
+    </nav>
+    <a class="btn btn-cheio mini" href="#agendar">Orçamento</a>
+  </div>
+</header>
+
+<main>
+<section class="capa">
+  <div class="wrap capa-in">
+    <div class="capa-txt">
+      <p class="etiqueta">Imbuí Torres Center · Salvador</p>
+      <h1>Sua tatuagem nova <span class="mora">mora aqui</span></h1>
+      <p class="nota-mao">sua ideia mora aqui ↓</p>
+      <p class="lead">A Casa du Risco é um estúdio de tatuagem no Imbuí. Dois artistas, dois jeitos de riscar: o realismo e o geek do Nog, o fine line delicado da Lilith.</p>
+      <div class="acoes">
+        <a class="btn btn-cheio" href="#agendar">Pedir orçamento</a>
+        <a class="btn btn-linha" href="#flashes-sec">Ver flashes disponíveis</a>
+      </div>
+      <ul class="capa-fatos">
+        <li><b>Seg–Sáb</b><span>10h às 18h</span></li>
+        <li><b>2</b><span>artistas na casa</span></li>
+        <li><b>Flash</b><span>pronto para tatuar</span></li>
+      </ul>
+    </div>
+    <div class="casa-moldura" aria-hidden="true">
+      <svg class="telhado" viewBox="0 0 400 150" preserveAspectRatio="none"><path d="M10 145 200 12 390 145" fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/><path d="M300 75V30h34v66" fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="round"/></svg>
+      <div class="casa-corpo">
+        <img src="fotos/logo.jpg" alt="" width="481" height="640">
+      </div>
+      <span class="casa-placa">Nº 2475</span>
+    </div>
+  </div>
+</section>
+
+<div class="planta" aria-hidden="true">
+  <div class="wrap planta-in">
+    <span>Sala · estúdio</span><span>Quarto 01 · Nog</span><span>Quarto 02 · Lilith</span><span>Cozinha · flashes</span><span>Corredor · galeria</span><span>Porta · orçamento</span>
+  </div>
+</div>
+
+<!-- ================= MORADORES ================= -->
+<section class="secao" id="moradores">
+  <div class="wrap">
+    <div class="cab-secao">
+      <p class="olho">Quem mora aqui</p>
+      <h2>Cada artista tem o seu quarto</h2>
+      <p class="sub">Abra a porta de cada um para ver portfólio, estilos e flashes, ou peça o orçamento direto.</p>
+    </div>
+    <div class="equipe" id="lista-equipe"></div>
+  </div>
+</section>
+
+<!-- ================= FLASHES ================= -->
+<section class="secao secao-geladeira" id="flashes-sec">
+  <div class="wrap">
+    <div class="cab-secao">
+      <p class="olho">Na porta da geladeira</p>
+      <h2>Flashes disponíveis</h2>
+      <p class="sub">Desenho pronto, esperando a pele certa. Escolheu? O pedido já vai com o flash, você só diz o lugar e a data.</p>
+    </div>
+    <div id="flashes"></div>
+  </div>
+</section>
+
+<!-- ================= GALERIA ================= -->
+<section class="secao" id="paredes">
+  <div class="wrap">
+    <div class="cab-secao">
+      <p class="olho">Corredor da casa</p>
+      <h2>Quadros nas paredes</h2>
+      <p class="sub">Peças que saíram daqui. Toque numa foto para ampliar e passar para a próxima.</p>
+    </div>
+    <div class="mural" data-mural data-max="10"></div>
+    <h3 class="h-meio">Tipos de sessão</h3>
+    <p class="sub">Tudo sob orçamento: o tipo de sessão só reserva o tempo certo na agenda.</p>
+    <div class="tipos" id="tipos" data-tipos><div class="carregando">Carregando…</div></div>
+  </div>
+</section>
+
+<!-- ================= DICAS / PROCESSO ================= -->
+<section class="secao secao-papel" id="processo">
+  <div class="wrap dicas">
+    <figure class="dicas-mascote">
+      <img src="fotos/mascote-dicas.jpg" alt="Mascote da Casa du Risco: Vai tatuar? Não faça isso antes!" width="533" height="640" loading="lazy">
+    </figure>
+    <div>
+      <p class="olho">Vai tatuar?</p>
+      <h2>A planta do processo</h2>
+      <ol class="comodos">
+        <li><b>01</b><span><strong>Ideia e referência</strong> você conta o que quer e manda imagens</span></li>
+        <li><b>02</b><span><strong>Desenho</strong> o artista risca a arte para o seu corpo</span></li>
+        <li><b>03</b><span><strong>Aprovação</strong> ajustes, valor e data fechados antes</span></li>
+        <li><b>04</b><span><strong>Sessão</strong> horário reservado só para a sua peça</span></li>
+        <li><b>05</b><span><strong>Cicatrização</strong> os cuidados que fazem a tattoo durar</span></li>
+      </ol>
+      <div class="acoes"><a class="btn btn-cheio" href="processo.html">Da ideia à pele: processo, FAQ e cuidados</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PEDIDO ================= -->
+<section class="secao agendar" id="agendar">
+  <div class="wrap">
+    <div class="cab-secao">
+      <p class="olho">Bate na porta</p>
+      <h2>Pedir orçamento</h2>
+      <p class="sub">Escolha quem tatua, conte a ideia e a data. No fim, o resumo sai pronto para mandar no WhatsApp.</p>
+    </div>
+    <div class="painel" id="agendar-app">
+
+      <div class="passos" id="passos">
+        <div class="passo" data-estado="atual">1 · Com quem</div>
+        <div class="passo" data-estado="aberto">2 · Serviço</div>
+        <div class="passo" data-estado="aberto">3 · Projeto</div>
+        <div class="passo" data-estado="aberto">4 · Dia</div>
+        <div class="passo" data-estado="aberto">5 · Seus dados</div>
+      </div>
+
+      <div class="escolhas" id="escolhas" hidden></div>
+
+      <!-- 1 -->
+      <div class="etapa" data-etapa="1" data-ativa>
+        <h3>Quem vai riscar?</h3>
+        <p class="dica">Nog: realismo, preto e cinza, blackwork e geek. Lilith: fine line e delicadas.</p>
+        <div class="lista-barbeiros" id="lista-barbeiros"></div>
+      </div>
+
+      <!-- 2 -->
+      <div class="etapa" data-etapa="2">
+        <h3>O que você quer fazer?</h3>
+        <p class="dica">Tudo sob orçamento. Na dúvida, comece pela conversa de orçamento.</p>
+        <div id="lista-servicos"></div>
+        <div class="acoes"><button class="voltar" type="button" data-voltar="1">← Trocar com quem</button></div>
+      </div>
+
+      <!-- 3 -->
+      <div class="etapa" data-etapa="3">
+        <h3>Seu projeto</h3>
+        <p class="dica">Quanto mais detalhe, mais certeiro vem o orçamento.</p>
+
+        <div class="projeto" id="projeto">
+          <div class="campos">
+            <div id="pj-estilo-box">
+              <span class="rotulo-campo">Estilo</span>
+              <div class="chips" id="pj-estilo" role="group" aria-label="Estilo"></div>
+            </div>
+            <div class="campos-2">
+              <div class="campo">
+                <label for="pj-local">Local do corpo</label>
+                <select id="pj-local">
+                  <option value="">Escolha</option>
+                  <option>Antebraço</option><option>Braço</option><option>Ombro</option>
+                  <option>Mão / dedos</option><option>Costas</option><option>Costela</option>
+                  <option>Peito</option><option>Barriga</option><option>Quadril</option><option>Coxa</option>
+                  <option>Perna / panturrilha</option><option>Pé / tornozelo</option>
+                  <option>Pescoço / nuca</option><option>Outro</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="pj-tamanho">Tamanho aproximado</label>
+                <select id="pj-tamanho">
+                  <option value="">Não sei ainda</option>
+                  <option>Até 5 cm</option><option>5 a 10 cm</option><option>10 a 20 cm</option>
+                  <option>Mais de 20 cm</option><option>Fechamento (braço, perna ou costas)</option>
+                </select>
+              </div>
+            </div>
+            <div class="campo">
+              <label for="pj-ideia">Sua ideia</label>
+              <textarea id="pj-ideia" maxlength="600" placeholder="Ex: mini realismo do meu cachorro no antebraço, ou livro aberto com estrelas em fine line"></textarea>
+            </div>
+            <div class="campos-2">
+              <div>
+                <span class="rotulo-campo">É sua primeira tattoo?</span>
+                <div class="chips" data-grupo="primeira" data-rotulo="Primeira tattoo"><button type="button" class="chip" aria-pressed="false">Sim</button><button type="button" class="chip" aria-pressed="false">Não</button></div>
+              </div>
+              <div>
+                <span class="rotulo-campo">É cobertura de outra tattoo?</span>
+                <div class="chips" data-grupo="cobertura" data-rotulo="Cobertura"><button type="button" class="chip" aria-pressed="false">Sim</button><button type="button" class="chip" aria-pressed="false">Não</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="msg-projeto"></div>
+        <div class="acoes">
+          <button class="btn btn-cheio" id="pj-continuar" type="button">Escolher o dia →</button>
+          <button class="voltar" type="button" data-voltar="2">← Trocar o serviço</button>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="etapa" data-etapa="4">
+        <h3>Escolha o dia</h3>
+        <p class="dica">O horário marca o começo do atendimento. A confirmação final vem pelo WhatsApp.</p>
+        <div class="fita" id="fita-dias"></div>
+        <p class="titulo-dia" id="titulo-dia"></p>
+        <div id="caixa-horas"></div>
+        <div class="acoes"><button class="voltar" type="button" data-voltar="3">← Voltar</button></div>
+      </div>
+
+      <!-- 5 -->
+      <div class="etapa" data-etapa="5">
+        <h3>Quase lá</h3>
+        <p class="dica">Só falta saber com quem a gente vai falar.</p>
+        <div class="resumo" id="resumo"></div>
+        <form id="form-cliente" novalidate>
+          <div class="campos">
+            <div class="campo">
+              <label for="cli-nome">Seu nome</label>
+              <input id="cli-nome" name="nome" type="text" autocomplete="name" placeholder="Como te chamam" required>
+            </div>
+            <div class="campo">
+              <label for="cli-tel">WhatsApp</label>
+              <input id="cli-tel" name="tel" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(71) 9 0000-0000" required>
+              <p class="ajuda">Para o estúdio falar com você sobre o pedido. Não vai para lista de propaganda.</p>
+            </div>
+            <div class="campo">
+              <label for="cli-obs"><span id="cli-obs-rot">Algo mais</span> <small>(opcional)</small></label>
+              <textarea id="cli-obs" name="obs" maxlength="240" placeholder="Algo mais que a gente precisa saber"></textarea>
+            </div>
+          </div>
+          <div id="msg-form"></div>
+          <div class="acoes">
+            <button class="btn btn-cheio" id="btn-confirmar" type="submit">Enviar pedido</button>
+            <button class="voltar" type="button" data-voltar="4">← Trocar o dia</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 6 -->
+      <div class="etapa" data-etapa="6">
+        <div class="sucesso">
+          <div class="selo-ok" aria-hidden="true">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <h3>Pedido enviado</h3>
+          <p class="com">com <span id="ok-barbeiro"></span></p>
+          <p class="dica" id="ok-linha" style="margin:.4rem 0 1rem"></p>
+          <p class="rotulo-codigo">Seu código</p>
+          <div class="codigo" id="ok-codigo"></div>
+          <p class="expl">
+            O horário fica reservado. Agora mande o resumo: o valor é combinado antes da sessão.
+            Com esse código você consulta ou cancela até 2 horas antes.
+          </p>
+          <div class="acoes">
+            <a class="btn btn-zap" id="ok-zap" target="_blank" rel="noopener">Mandar resumo</a>
+            <button class="btn btn-linha" id="ok-copiar" type="button">Copiar resumo</button>
+            <a class="btn btn-linha" id="ok-ics">Salvar no calendário</a>
+            <button class="btn btn-linha" id="btn-novo" type="button">Fazer outro pedido</button>
+          </div>
+          <p class="copiado" id="ok-copiado" aria-live="polite"></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= MEU PEDIDO ================= -->
+<section class="secao" id="meu-horario">
+  <div class="wrap dupla">
+    <div>
+      <p class="olho">Já pediu?</p>
+      <h2>Consultar ou cancelar</h2>
+      <p class="sub">Deu imprevisto? Cancele por aqui e o horário volta para a agenda. Pelo site, vale até <b>2 horas antes</b>. Depois disso, chame o estúdio no WhatsApp.</p>
+    </div>
+    <div class="cartao">
+      <form id="form-consulta">
+        <div class="campos">
+          <div class="campo">
+            <label for="con-codigo">Código do pedido</label>
+            <input id="con-codigo" type="text" placeholder="Ex: A3F91C" style="text-transform:uppercase" required>
+          </div>
+          <div class="campo">
+            <label for="con-tel">WhatsApp usado</label>
+            <input id="con-tel" type="tel" inputmode="numeric" placeholder="(71) 9 0000-0000" required>
+          </div>
+          <button class="btn btn-cheio btn-bloco" type="submit">Buscar meu pedido</button>
+        </div>
+      </form>
+      <div id="saida-consulta"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ENDEREÇO ================= -->
+<section class="secao secao-papel" id="endereco">
+  <div class="wrap">
+    <div class="cab-secao">
+      <p class="olho">Endereço da casa</p>
+      <h2>Imbuí Torres Center</h2>
+    </div>
+    <div class="local-in">
+      <div class="infos">
+        <div class="info-item"><b class="rot">Endereço</b><span>R. Prof. Pinto de Aguiar, 2475<small>Imbuí Torres Center · Imbuí, Salvador — BA</small></span></div>
+        <div class="info-item"><b class="rot">Horário</b><span>Segunda a sábado, 10h às 18h<small>Domingo fechado.</small></span></div>
+        <div class="info-item"><b class="rot">Contato</b><a href="https://wa.me/message/EHT7IBLVNQOOE1" target="_blank" rel="noopener">WhatsApp do estúdio</a><a href="https://www.instagram.com/studiocasadurisco/" target="_blank" rel="noopener">@studiocasadurisco</a></div>
+        <div class="acoes"><a class="btn btn-cheio" href="https://www.google.com/maps/search/?api=1&amp;query=Imbu%C3%AD+Torres+Center%2C+R.+Prof.+Pinto+de+Aguiar%2C+2475%2C+Salvador+BA" target="_blank" rel="noopener">Abrir a rota no Google Maps</a></div>
+      </div>
+      <div class="mapa" id="mapa"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="rodape-in">
+      <div class="rodape-marca">
+        <img src="fotos/logo.jpg" alt="Logo da Casa du Risco" width="120" height="160" loading="lazy">
+        <div>
+          <p class="rodape-assina">Sua tatuagem nova mora aqui.</p>
+          <p>Imbuí Torres Center, R. Prof. Pinto de Aguiar, 2475 · Salvador — BA</p>
+        </div>
+      </div>
+      <div>
+        <b class="rodape-titulo">Moradores</b>
+        <ul class="rodape-links">
+          <li><a href="artista.html?a=nog">Nog · realismo e geek</a></li>
+          <li><a href="artista.html?a=lilith">Lilith · fine line</a></li>
+        </ul>
+      </div>
+      <div>
+        <b class="rodape-titulo">Navegar</b>
+        <ul class="rodape-links">
+          <li><a href="#agendar">Pedir orçamento</a></li>
+          <li><a href="processo.html">Da ideia à pele</a></li>
+          <li><a href="#meu-horario">Consultar ou cancelar</a></li>
+          <li><a href="https://www.instagram.com/studiocasadurisco/" target="_blank" rel="noopener">@studiocasadurisco</a></li>
+          <li><a href="admin.html">Área do estúdio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="creditos">
+      <span>© <span id="ano"></span> Casa du Risco</span>
+      <span>Guardamos seu nome, WhatsApp e a descrição do pedido só para organizar a agenda. Para apagar seus dados, é só pedir no WhatsApp.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="flutua" href="#agendar">Pedir orçamento</a>
+
+<script src="assets/config.js?v=20261020132316"></script>
+<script src="assets/demo.js?v=20261020132316"></script>
+<script src="assets/site.js?v=20261020132316"></script>
+<script src="assets/tattoo.js?v=20261020132316"></script>
+<script src="assets/agenda.js?v=20261020132316"></script>
+</body>
+</html>
